@@ -1,5 +1,6 @@
 'use client';
 
+import { h3 } from 'framer-motion/client';
 import React, { useRef, useState, useEffect } from 'react';
 
 interface ShowcaseItem {
@@ -138,21 +139,19 @@ export const ShowcaseCarousel: React.FC<ShowcaseCarouselProps> = ({
                 className="group flex-shrink-0 w-[280px] sm:w-[320px] md:w-[360px] lg:w-[calc(33.333%-16px)] snap-start"
               >
                 {/* Card */}
-                <div className="overflow-hidden rounded-2xl sm:rounded-3xl bg-surface-muted shadow-md shadow-brand-900/5 transition-shadow duration-300 hover:shadow-xl hover:shadow-brand-900/10">
-                  <div className="aspect-[16/10] overflow-hidden">
+                <div className="rounded-2xl sm:rounded-3xl border border-brand-900/8 bg-gray-200 p-1 sm:p-2 cursor-pointer shadow-md shadow-brand-900/5 transition-shadow duration-300 hover:shadow-xl hover:shadow-brand-900/10">
+                    <div className="aspect-[16/9] overflow-hidden rounded-xl sm:rounded-2xl shadow-xl">
                     <img
-                      src={item.image}
-                      alt={item.title}
-                      loading="lazy"
-                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        src={item.image}
+                        alt={item.title}
+                        loading="lazy"
+                        className="h-full w-full object-cover"
                     />
-                  </div>
                 </div>
-
-                {/* Title */}
-                <h3 className="mt-3 sm:mt-4 text-base sm:text-lg font-bold text-brand-900 px-1">
-                  {item.title}
-                </h3>
+                    <h3 className="mt-3 sm:mt-4 text-base sm:text-lg font-bold text-brand-900 px-1">
+                        {item.title}
+                    </h3>
+                </div>  
               </div>
             ))}
           </div>
