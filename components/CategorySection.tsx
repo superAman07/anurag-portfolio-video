@@ -53,7 +53,7 @@ export const CategorySection: React.FC<CategorySectionProps> = ({
                 : '-translate-x-12 opacity-0'
             }`}
           >
-            <p className="mb-4 text-xs font-bold uppercase tracking-[0.2em] text-accent">
+            <p className="mb-4 text-xs hidden font-bold uppercase tracking-[0.2em] text-accent">
               What We Do
             </p>
 
@@ -77,12 +77,13 @@ export const CategorySection: React.FC<CategorySectionProps> = ({
             }`}
           >
             <div className="group relative overflow-hidden rounded-3xl bg-surface-muted shadow-xl shadow-brand-900/10">
-              <div className="aspect-[16/10] overflow-hidden">
-                <img
-                  src={imageSrc}
-                  alt={title}
-                  loading="lazy"
-                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+              <div className="aspect-[16/9] overflow-hidden">
+                <iframe
+                  src={imageSrc.replace('youtu.be/', 'www.youtube.com/embed/').split('?')[0]}
+                  title={title}
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                  className="h-full w-full object-cover"
                 />
               </div>
 
