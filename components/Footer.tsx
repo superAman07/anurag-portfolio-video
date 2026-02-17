@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
             <div className="h-1.5 w-1.5 rounded-full bg-accent" />
           </div>
           <span className="font-display text-base font-bold text-brand-900">
-            burnwe
+            AnonymousAnuraG
           </span>
         </div>
 
@@ -38,7 +38,7 @@ export const Footer: React.FC = () => {
 
         {/* Copyright */}
         <p className="text-xs text-brand-800/30">
-          © {new Date().getFullYear()} Burnwe
+          © {new Date().getFullYear()} AnonymousAnuraG
         </p>
       </div>
     </footer>

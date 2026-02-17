@@ -35,7 +35,7 @@ export const Header: React.FC = () => {
             <div className="h-2 w-2 rounded-full bg-accent" />
           </div>
           <span className="text-xl font-display font-bold tracking-tight text-brand-900">
-            burnwe
+            AnonymousAnuraG
           </span>
         </Link>
 

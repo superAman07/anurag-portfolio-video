@@ -30,28 +30,23 @@ export const CTA: React.FC = () => {
         </p>
 
         <h2 className="font-display text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
-          Ready to elevate
+          I'm ready to elevate 
           <br />
-          your brand?
+          your videos.
         </h2>
-
-        <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-white/50">
-          Book a free 30-minute strategy call. No commitment — just a
-          conversation about how video can transform your business.
-        </p>
-
         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
           <button className="rounded-full bg-accent px-10 py-4 text-base font-bold text-white shadow-xl shadow-accent/30 transition-all hover:-translate-y-px hover:bg-orange-600 hover:shadow-accent/50 active:translate-y-0">
-            Book a Call →
+            Contact Me →
           </button>
 
           <button className="rounded-full border border-white/20 px-10 py-4 text-base font-semibold text-white/80 transition-all hover:border-white/40 hover:text-white">
-            View Pricing
+            YouTube
           </button>
         </div>
 
         <p className="mt-6 text-sm text-white/30">
-          Trusted by 200+ brands · Average 3× ROI on video investment
+          Book a free 30-minute strategy call. No commitment — just a
+          conversation about how video can transform your business.
         </p>
       </div>
     </section>
