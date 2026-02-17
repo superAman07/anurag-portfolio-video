@@ -17,7 +17,7 @@ export const Hero: React.FC = () => {
         <div className="absolute -bottom-40 -left-40 h-[500px] w-[500px] rounded-full bg-brand-500/5 blur-3xl" />
       </div>
 
-      <div className="relative block lg:hidden">
+      <div className="relative block lg:hidden pt-20">
         <div className="relative w-full overflow-hidden">
           <img
             src="/animation_1_mobile.png"

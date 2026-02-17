@@ -1837,6 +1837,12 @@ video {
 .pb-4 {
   padding-bottom: 1rem;
 }
+.pt-20 {
+  padding-top: 5rem;
+}
+.pt-10 {
+  padding-top: 2.5rem;
+}
 .text-center {
   text-align: center;
 }
