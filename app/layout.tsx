@@ -15,7 +15,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Burnwe — Video Production Portfolio',
+  title: 'Anurag Editz — Video Editing Portfolio',
   description:
     'Award-winning animated explainers, promo videos, and product demos crafted for global brands.',
 };
