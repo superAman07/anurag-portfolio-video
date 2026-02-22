@@ -13,9 +13,9 @@ export default function Home() {
       <main>
         <Hero />
         <CategorySection
-          title="Documentary Videos"
-          description="Simplify complex ideas with engaging 2D and 3D animations. Perfect for SaaS products, fintech solutions, and educational content that needs to be understood in seconds."
-          imageSrc="https://youtu.be/4YWx5DkBfH4?si=JDNFO6J-UvRhXoyy"
+          title="Entertainment Videos"
+          description="High-energy videos designed to capture attention on social media and TV. We combine dynamic typography, live-action footage, and rhythm-perfect editing."
+          imageSrc="https://youtu.be/HSlVSMFWt0U?si=WB9TUrAG25VZYGMC"
         />
         <CategorySection
           title="Educational Videos"
@@ -24,17 +24,17 @@ export default function Home() {
           inverted
         />
         <CategorySection
-          title="Entertainment Videos"
-          description="High-energy videos designed to capture attention on social media and TV. We combine dynamic typography, live-action footage, and rhythm-perfect editing."
-          imageSrc="https://youtu.be/HSlVSMFWt0U?si=WB9TUrAG25VZYGMC"
+          title="Documentary Videos"
+          description="Simplify complex ideas with engaging 2D and 3D animations. Perfect for SaaS products, fintech solutions, and educational content that needs to be understood in seconds."
+          imageSrc="https://youtu.be/4YWx5DkBfH4?si=JDNFO6J-UvRhXoyy"
         />
         <ShowcaseCarousel
-          heading="Animated Explainer Videos"
-          description="Our Animated Explainer videos are here to help you obtain the image you want and need in only 60-90 seconds. Explainer videos are the easiest and most efficient way of breaking down key information about your product. Demonstrate your strengths & prove your worth through us."
+          heading="Motion Graphics"
+          description=""
           items={[
-            { title: 'Blend', image: 'https://img.youtube.com/vi/H9hxJiaCjNY/0.jpg' },
-            { title: 'Cornix', image: 'https://img.youtube.com/vi/cCO5OMP5ZDw/0.jpg' },
-            { title: 'Onyxia', image: 'https://img.youtube.com/vi/H9hxJiaCjNY/0.jpg' },
+            { title: '', video: '/Graphic_02.mp4' },
+            { title: '', video: '/Graphic_01.mp4' },
+            { title: '', video: '/Graphic_03.mp4' },
           ]}
         />
         <CTA />

@@ -5,7 +5,7 @@ import React, { useRef, useState, useEffect } from 'react';
 
 interface ShowcaseItem {
   title: string;
-  image: string;
+  video: string;
 }
 
 interface ShowcaseCarouselProps {
@@ -78,21 +78,11 @@ export const ShowcaseCarousel: React.FC<ShowcaseCarouselProps> = ({
           }`}
         >
           {/* Heading with decorative line */}
-          <div className="flex items-center gap-4 sm:gap-6">
-            <h2 className="font-display text-2xl font-extrabold tracking-tight text-brand-900 sm:text-3xl lg:text-4xl whitespace-nowrap">
+          <div className="flex items-center justify-center gap-4 sm:gap-6">
+            <h2 className="font-display text-2xl text-center font-extrabold tracking-tight text-brand-900 sm:text-3xl lg:text-4xl whitespace-nowrap">
               {heading}
             </h2>
-
-            <div className="hidden sm:flex items-center gap-3 flex-1">
-              <div className="h-[2px] flex-1 bg-brand-900/15 rounded-full" />
-              <div className="h-3 w-3 rounded-full bg-brand-900" />
-            </div>
           </div>
-
-          {/* Description */}
-          <p className="mt-4 sm:mt-5 max-w-2xl text-sm sm:text-base leading-relaxed text-brand-800/55">
-            {description}
-          </p>
         </div>
 
         {/* Carousel */}
@@ -139,16 +129,18 @@ export const ShowcaseCarousel: React.FC<ShowcaseCarouselProps> = ({
                 className="group flex-shrink-0 w-[280px] sm:w-[320px] md:w-[360px] lg:w-[calc(33.333%-16px)] snap-start"
               >
                 {/* Card */}
-                <div className="rounded-2xl sm:rounded-3xl border border-brand-900/8 bg-gray-200 p-1 sm:p-2 cursor-pointer shadow-md shadow-brand-900/5 transition-shadow duration-300 hover:shadow-xl hover:shadow-brand-900/10">
+                <div className="rounded-2xl sm:rounded-2xl border border-brand-900/8 bg-gray-200 p-1 sm:p-2 pb-10! cursor-pointer shadow-md shadow-brand-900/5 transition-shadow duration-300 hover:shadow-xl hover:shadow-brand-900/10">
                     <div className="aspect-[16/9] overflow-hidden rounded-xl sm:rounded-2xl shadow-xl">
-                    <img
-                        src={item.image}
-                        alt={item.title}
-                        loading="lazy"
+                    <video
+                        src={item.video}
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
                         className="h-full w-full object-cover"
                     />
                 </div>
-                    <h3 className="mt-3 sm:mt-4 text-base sm:text-lg font-bold text-brand-900 px-1">
+                    <h3 className="mt-3 sm:mt-4 text-base pb-5 sm:text-lg font-bold text-brand-900 px-1">
                         {item.title}
                     </h3>
                 </div>  

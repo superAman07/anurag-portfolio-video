@@ -86,13 +86,6 @@ export const CategorySection: React.FC<CategorySectionProps> = ({
                   className="h-full w-full object-cover"
                 />
               </div>
-
-              {/* Minimal corner accent */}
-              <div
-                className={`absolute -bottom-2 ${
-                  inverted ? '-left-2' : '-right-2'
-                } h-16 w-16 rounded-xl bg-accent/15 backdrop-blur-md`}
-              />
             </div>
           </div>
         </div>
