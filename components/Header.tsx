@@ -29,11 +29,8 @@ export const Header: React.FC = () => {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 group">
-          <div className="relative flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-brand-900 to-brand-700 shadow-lg shadow-brand-900/20 transition-shadow group-hover:shadow-brand-900/40">
-            <div className="h-2 w-2 rounded-full bg-accent" />
-          </div>
-          <span className="text-xl font-display font-bold tracking-tight text-brand-900">
-            AnonymousAnuraG
+          <span className="text-2xl font-display font-bold tracking-tight text-brand-900">
+            Anurag Editz
           </span>
         </Link>
 
