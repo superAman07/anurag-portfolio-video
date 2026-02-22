@@ -1438,6 +1438,11 @@ video {
   --tw-scale-y: .75;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+.scale-\[0\.8\] {
+  --tw-scale-x: 0.8;
+  --tw-scale-y: 0.8;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -1555,6 +1560,9 @@ video {
 }
 .scroll-smooth {
   scroll-behavior: smooth;
+}
+.text-clip {
+  text-overflow: clip;
 }
 .whitespace-nowrap {
   white-space: nowrap;
@@ -1675,6 +1683,14 @@ video {
 }
 .bg-brand-900\/\[0\.02\] {
   background-color: rgb(10 22 40 / 0.02);
+}
+.bg-\[white\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+.bg-\[\#252525\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 37 37 / var(--tw-bg-opacity, 1));
 }
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
@@ -1889,6 +1905,10 @@ video {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -2034,6 +2054,18 @@ video {
 }
 .tracking-widest {
   letter-spacing: 0.1em;
+}
+.tracking-tighter {
+  letter-spacing: -0.05em;
+}
+.-tracking-tight {
+  letter-spacing: 0.025em;
+}
+.tracking-\[tight\] {
+  letter-spacing: tight;
+}
+.tracking-\[-1px\] {
+  letter-spacing: -1px;
 }
 .text-accent {
   --tw-text-opacity: 1;
@@ -2597,6 +2629,10 @@ video {
     padding-bottom: 1.5rem;
   }
 
+  .sm\:pt-24 {
+    padding-top: 6rem;
+  }
+
   .sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -2713,6 +2749,10 @@ video {
   .lg\:py-36 {
     padding-top: 9rem;
     padding-bottom: 9rem;
+  }
+
+  .lg\:pt-32 {
+    padding-top: 8rem;
   }
 
   .lg\:text-4xl {

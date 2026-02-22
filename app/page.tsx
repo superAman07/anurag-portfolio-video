@@ -37,7 +37,9 @@ export default function Home() {
             { title: '', video: '/Graphic_03.mp4' },
           ]}
         />
-        <CTA />
+        <div className='pt-20 sm:pt-24 lg:pt-32'>
+          <CTA />
+        </div>
       </main>
       <Footer />
     </div>

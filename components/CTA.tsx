@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import React from 'react';
 
 export const CTA: React.FC = () => {
@@ -39,13 +40,13 @@ export const CTA: React.FC = () => {
             Contact Me →
           </button>
 
-          <button className="rounded-full border border-white/20 px-10 py-4 text-base font-semibold text-white/80 transition-all hover:border-white/40 hover:text-white">
+          <Link href="https://www.youtube.com/@AnonymousAnuraG/videos" className="rounded-full border border-white/20 px-10 py-4 text-base font-semibold text-white/80 transition-all hover:border-white/40 hover:text-white">
             YouTube
-          </button>
+          </Link>
         </div>
 
         <p className="mt-6 text-sm text-white/30">
-          Book a free 30-minute strategy call. No commitment — just a
+          Book a free 10-minute strategy call. No commitment — just a
           conversation about how video can transform your business.
         </p>
       </div>
