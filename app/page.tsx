@@ -14,18 +14,18 @@ export default function Home() {
         <Hero />
         <CategorySection
           title="Entertainment Videos"
-          description="High-energy videos designed to capture attention on social media and TV. We combine dynamic typography, live-action footage, and rhythm-perfect editing."
+          description="Entertainment videos with energy and purpose. I blend storytelling with music-driven pacing to create content that's not just watchable — it's rewatchable."
           imageSrc="https://youtu.be/HSlVSMFWt0U?si=WB9TUrAG25VZYGMC"
         />
         <CategorySection
           title="Educational Videos"
-          description="Walk your users through your product with crystal-clear screen recordings and motion graphics. Increase adoption rates and reduce support tickets with visual guides."
+          description="Professional editing for educational content that holds attention. I focus on clear pacing, strategic B-roll, and clean visuals to help your audience actually retain and understand what they're learning."
           imageSrc="https://youtu.be/VLk0iBjW2EQ?si=WAtS60iFBDtK5OhP"
           inverted
         />
         <CategorySection
           title="Documentary Videos"
-          description="Simplify complex ideas with engaging 2D and 3D animations. Perfect for SaaS products, fintech solutions, and educational content that needs to be understood in seconds."
+          description="Documentary editing that holds attention. I craft educational and narrative-driven content with strategic pacing, B-roll integration, and music selection designed to maximize watch time and keep your audience engaged till the end."
           imageSrc="https://youtu.be/4YWx5DkBfH4?si=JDNFO6J-UvRhXoyy"
         />
         <ShowcaseCarousel

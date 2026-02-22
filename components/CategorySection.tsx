@@ -70,21 +70,25 @@ export const CategorySection: React.FC<CategorySectionProps> = ({
             </button>
           </div>
 
-          {/* ── Image ─────────────── */}
+          {/* ── video ─────────────── */}
           <div
             className={`flex-1 w-full transition-all duration-700 delay-150 ${
               visible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'
             }`}
           >
-            <div className="group relative overflow-hidden rounded-3xl bg-surface-muted shadow-xl shadow-brand-900/10">
-              <div className="aspect-[16/9] overflow-hidden">
-                <iframe
-                  src={imageSrc.replace('youtu.be/', 'www.youtube.com/embed/').split('?')[0]}
-                  title={title}
-                  allow="autoplay; encrypted-media"
-                  allowFullScreen
-                  className="h-full w-full object-cover"
-                />
+            <div className="group relative">
+              {/* Frame container matching ShowcaseCarousel style */}
+              <div className="rounded-2xl sm:rounded-2xl border border-brand-900/8 bg-gray-200 pt-2 pl-2 pr-2 pb-2 sm:pb-6 shadow-md transition-shadow duration-300 hover:shadow-xl">
+                <div className="aspect-[16/9] overflow-hidden rounded-xl sm:rounded-2xl shadow-xl">
+                  <iframe
+                    // Added modestbranding=1 and controls=0 to hide YouTube tags/UI as much as possible
+                    src={`${imageSrc.replace('youtu.be/', 'www.youtube.com/embed/').split('?')[0]}?modestbranding=1&rel=0&iv_load_policy=3&controls=0`}
+                    title={title}
+                    allow="autoplay; encrypted-media"
+                    allowFullScreen
+                    className="h-full w-full object-cover"
+                  />
+                </div>
               </div>
             </div>
           </div>
