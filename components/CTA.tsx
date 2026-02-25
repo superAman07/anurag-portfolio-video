@@ -7,12 +7,14 @@ import { X, Send, CheckCircle2 } from 'lucide-react';
 
 export const CTA: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [status, setStatus] = useState<'idle' | 'success'>('idle');
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success'>('idle'); // Added 'loading'
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setStatus('idle');
+    if (status === 'loading') return;
+    
+    setStatus('loading');
 
     try {
       const response = await fetch('/api/send', {
@@ -35,6 +37,7 @@ export const CTA: React.FC = () => {
         alert('Something went wrong. Please try again.');
       }
     } catch (error) {
+      setStatus('idle');
       console.error('Error:', error);
       alert('Failed to connect to the server.');
     }
@@ -119,9 +122,9 @@ export const CTA: React.FC = () => {
                     <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-green-100 text-green-600">
                       <CheckCircle2 size={40} />
                     </div>
-                    <h3 className="text-2xl font-bold text-brand-900">Message Prepared!</h3>
+                    <h3 className="text-2xl font-bold text-brand-900">Message Sent!</h3>
                     <p className="mt-2 text-brand-800/60 text-balance">
-                      Your email client should have opened. If not, please send manually to anuragpal63866@gmail.com
+                      Thanks for reaching out! I've received your message and will get back to you shortly at <strong>{formData.email}</strong>.
                     </p>
                   </div>
                 ) : (
@@ -156,10 +159,21 @@ export const CTA: React.FC = () => {
 
                       <button
                         type="submit"
-                        className="flex w-full items-center justify-center gap-2 rounded-2xl bg-brand-900 py-4 font-bold text-white transition-all hover:bg-brand-950 active:scale-[0.98]"
+                        disabled={status === 'loading'}
+                        className={`flex w-full items-center justify-center gap-2 rounded-2xl py-4 font-bold text-white transition-all 
+                          ${status === 'loading' ? 'bg-brand-800 opacity-70 cursor-not-allowed' : 'bg-brand-900 hover:bg-brand-950 active:scale-[0.98]'}`}
                       >
-                        <Send size={18} />
-                        Send Inquiry
+                        {status === 'loading' ? (
+                          <>
+                            <div className="h-5 w-5 animate-spin rounded-full border-2 border-white/30 border-t-white" />
+                            Sending...
+                          </>
+                        ) : (
+                          <>
+                            <Send size={18} />
+                            Send Inquiry
+                          </>
+                        )}
                       </button>
                     </form>
                   </>
