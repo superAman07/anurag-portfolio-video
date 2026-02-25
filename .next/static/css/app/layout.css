@@ -1222,6 +1222,9 @@ video {
 .h-full {
   height: 100%;
 }
+.h-\[55vh\] {
+  height: 55vh;
+}
 .max-h-\[90vh\] {
   max-height: 90vh;
 }
@@ -1640,6 +1643,22 @@ video {
   -o-object-position: center;
      object-position: center;
 }
+.object-\[right_center\] {
+  -o-object-position: right center;
+     object-position: right center;
+}
+.object-\[85\%_center\] {
+  -o-object-position: 85% center;
+     object-position: 85% center;
+}
+.object-\[85\%_95\%\] {
+  -o-object-position: 85% 95%;
+     object-position: 85% 95%;
+}
+.object-\[center_75\%\] {
+  -o-object-position: center 75%;
+     object-position: center 75%;
+}
 .p-1 {
   padding: 0.25rem;
 }
@@ -1754,6 +1773,9 @@ video {
 }
 .pt-8 {
   padding-top: 2rem;
+}
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 .text-center {
   text-align: center;
@@ -2287,6 +2309,10 @@ video {
     height: 3rem;
   }
 
+  .sm\:h-\[60vh\] {
+    height: 60vh;
+  }
+
   .sm\:w-12 {
     width: 3rem;
   }
@@ -2351,6 +2377,11 @@ video {
     padding-bottom: 6rem;
   }
 
+  .sm\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
   .sm\:pb-6 {
     padding-bottom: 1.5rem;
   }
@@ -2361,6 +2392,14 @@ video {
 
   .sm\:pt-24 {
     padding-top: 6rem;
+  }
+
+  .sm\:pb-16 {
+    padding-bottom: 4rem;
+  }
+
+  .sm\:pt-4 {
+    padding-top: 1rem;
   }
 
   .sm\:text-3xl {
@@ -2411,12 +2450,24 @@ video {
 
 @media (min-width: 1024px) {
 
+  .lg\:absolute {
+    position: absolute;
+  }
+
+  .lg\:inset-0 {
+    inset: 0px;
+  }
+
   .lg\:block {
     display: block;
   }
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:h-full {
+    height: 100%;
   }
 
   .lg\:min-h-screen {
