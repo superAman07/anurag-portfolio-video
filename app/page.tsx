@@ -17,11 +17,14 @@ export default function Home() {
           description="Entertainment videos with energy and purpose. I blend storytelling with music-driven pacing to create content that's not just watchable — it's rewatchable."
           imageSrc="https://youtu.be/HSlVSMFWt0U?si=WB9TUrAG25VZYGMC"
         />
-        <CategorySection
-          title="Educational Videos"
-          description="Professional editing for educational content that holds attention. I focus on clear pacing, strategic B-roll, and clean visuals to help your audience actually retain and understand what they're learning."
-          imageSrc="https://youtu.be/VLk0iBjW2EQ?si=WAtS60iFBDtK5OhP"
-          inverted
+        <ShowcaseCarousel
+          heading="Educationa video"
+          description={"anurag pal paragraph loda lassan\nProfessional editing for educational content that holds attention"}
+          items={[
+            { title: '', video: 'https://youtu.be/VLk0iBjW2EQ?si=WAtS60iFBDtK5OhP' },
+            { title: '', video: 'https://youtu.be/VLk0iBjW2EQ?si=WAtS60iFBDtK5OhP' },
+            { title: '', video: 'https://youtu.be/VLk0iBjW2EQ?si=WAtS60iFBDtK5OhP' },
+          ]}
         />
         <CategorySection
           title="Documentary Videos"

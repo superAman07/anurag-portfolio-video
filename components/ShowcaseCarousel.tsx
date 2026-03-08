@@ -78,10 +78,16 @@ export const ShowcaseCarousel: React.FC<ShowcaseCarouselProps> = ({
           }`}
         >
           {/* Heading with decorative line */}
-          <div className="flex items-center justify-center gap-4 sm:gap-6">
+                    {/* Heading and Description */}
+          <div className="flex flex-col items-center justify-center gap-2 sm:gap-4 mt-2">
             <h2 className="font-display text-2xl text-center font-extrabold tracking-tight text-brand-900 sm:text-3xl lg:text-4xl whitespace-nowrap">
               {heading}
             </h2>
+            {description && (
+              <p className="max-w-2xl text-center text-base sm:text-lg text-gray-700 whitespace-pre-line px-4">
+                {description}
+              </p>
+            )}
           </div>
         </div>
 
@@ -130,19 +136,29 @@ export const ShowcaseCarousel: React.FC<ShowcaseCarouselProps> = ({
               >
                 {/* Card */}
                 <div className="rounded-2xl sm:rounded-2xl border border-brand-900/8 bg-gray-200 p-1 sm:p-2 pb-10! cursor-pointer shadow-md shadow-brand-900/5 transition-shadow duration-300 hover:shadow-xl hover:shadow-brand-900/10">
-                    <div className="aspect-[16/9] overflow-hidden rounded-xl sm:rounded-2xl shadow-xl">
-                    <video
+                  <div className="aspect-[16/9] overflow-hidden rounded-xl sm:rounded-2xl shadow-xl">
+                    {item.video.includes('youtu') ? (
+                      <iframe
+                        src={`${item.video.replace('youtu.be/', 'www.youtube.com/embed/').replace('youtube.com/watch?v=', 'youtube.com/embed/').split('?')[0]}?modestbranding=1&rel=0&iv_load_policy=3&controls=0`}
+                        title={item.title || "YouTube video"}
+                        allow="autoplay; encrypted-media"
+                        allowFullScreen
+                        className="h-full w-full object-cover"
+                      />
+                    ) : (
+                      <video
                         src={item.video}
                         autoPlay
                         muted
                         loop
                         playsInline
                         className="h-full w-full object-cover"
-                    />
-                </div>
-                    <h3 className="mt-3 sm:mt-4 text-base pb-5 sm:text-lg font-bold text-brand-900 px-1">
-                        {item.title}
-                    </h3>
+                      />
+                    )}
+                  </div>
+                  <h3 className="mt-3 sm:mt-4 text-base pb-5 sm:text-lg font-bold text-brand-900 px-1">
+                      {item.title}
+                  </h3>
                 </div>  
               </div>
             ))}
