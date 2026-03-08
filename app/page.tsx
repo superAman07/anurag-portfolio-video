@@ -21,8 +21,8 @@ export default function Home() {
           heading="Educationa video"
           description={"Professional editing for educational content that holds attention. I focus on clear pacing, strategic B-roll, and clean visuals to help your audience actually retain and understand what they're learning."}
           items={[
-            { title: '', video: 'https://youtu.be/VLk0iBjW2EQ?si=WAtS60iFBDtK5OhP' },
-            { title: '', video: 'https://youtu.be/VLk0iBjW2EQ?si=WAtS60iFBDtK5OhP' },
+            { title: '', video: 'https://www.youtube.com/watch?v=8nm9KAYl3Cg' },
+            { title: '', video: 'https://drive.google.com/file/d/1h8nm8nTl_PiUDmv0CfRIU1dPHucbRLLZ/view?usp=drive_link' },
             { title: '', video: 'https://youtu.be/VLk0iBjW2EQ?si=WAtS60iFBDtK5OhP' },
           ]}
         />
