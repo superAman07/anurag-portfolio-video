@@ -19,7 +19,7 @@ export default function Home() {
         />
         <ShowcaseCarousel
           heading="Educationa video"
-          description={"anurag pal paragraph loda lassan\nProfessional editing for educational content that holds attention"}
+          description={"Professional editing for educational content that holds attention. I focus on clear pacing, strategic B-roll, and clean visuals to help your audience actually retain and understand what they're learning."}
           items={[
             { title: '', video: 'https://youtu.be/VLk0iBjW2EQ?si=WAtS60iFBDtK5OhP' },
             { title: '', video: 'https://youtu.be/VLk0iBjW2EQ?si=WAtS60iFBDtK5OhP' },
