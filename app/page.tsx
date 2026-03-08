@@ -18,7 +18,7 @@ export default function Home() {
           imageSrc="https://youtu.be/HSlVSMFWt0U?si=WB9TUrAG25VZYGMC"
         />
         <ShowcaseCarousel
-          heading="Educational video"
+          heading="Educational videos"
           description={"Professional editing for educational content that holds attention. I focus on clear pacing, strategic B-roll, and clean visuals to help your audience actually retain and understand what they're learning."}
           items={[
             { title: '', video: 'https://www.youtube.com/watch?v=8nm9KAYl3Cg' },
