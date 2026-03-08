@@ -136,11 +136,19 @@ export const ShowcaseCarousel: React.FC<ShowcaseCarouselProps> = ({
               >
                 {/* Card */}
                 <div className="rounded-2xl sm:rounded-2xl border border-brand-900/8 bg-gray-200 p-1 sm:p-2 pb-10! cursor-pointer shadow-md shadow-brand-900/5 transition-shadow duration-300 hover:shadow-xl hover:shadow-brand-900/10">
-                  <div className="aspect-[16/9] overflow-hidden rounded-xl sm:rounded-2xl shadow-xl">
+                                    <div className="aspect-[16/9] overflow-hidden rounded-xl sm:rounded-2xl shadow-xl">
                     {item.video.includes('youtu') ? (
                       <iframe
                         src={`${item.video.replace('youtu.be/', 'www.youtube.com/embed/').replace('youtube.com/watch?v=', 'youtube.com/embed/').split('?')[0]}?modestbranding=1&rel=0&iv_load_policy=3&controls=0`}
                         title={item.title || "YouTube video"}
+                        allow="autoplay; encrypted-media"
+                        allowFullScreen
+                        className="h-full w-full object-cover"
+                      />
+                    ) : item.video.includes('drive.google.com') ? (
+                      <iframe
+                        src={item.video.replace('/view', '/preview').split('?')[0]}
+                        title={item.title || "Google Drive video"}
                         allow="autoplay; encrypted-media"
                         allowFullScreen
                         className="h-full w-full object-cover"
