@@ -5,6 +5,7 @@ import { CategorySection } from '../components/CategorySection';
 import { CTA } from '../components/CTA';
 import { Footer } from '../components/Footer';
 import { ShowcaseCarousel } from '../components/ShowcaseCarousel';
+import { VideoShowcase } from '../components/VideoShowcase';
 
 export default function Home() {
   return (
@@ -39,6 +40,11 @@ export default function Home() {
             { title: '', video: '/Graphic_01.mp4' },
             { title: '', video: '/Graphic_03.mp4' },
           ]}
+        />
+        <VideoShowcase
+          heading="Video Showcase"
+          description="Eye-catching motion design that brings brands to life. From kinetic typography to full animated sequences — crafted to stop the scroll."
+          videos={['/Graphic_01.mp4', '/Graphic_02.mp4', '/Graphic_03.mp4']}
         />
         <div className='pt-20 sm:pt-24 lg:pt-32'>
           <CTA />
