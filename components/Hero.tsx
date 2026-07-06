@@ -3,9 +3,9 @@
 import React from 'react';
 
 const stats = [
-  { value: '100+', label: 'Quality Videos' },
+  { value: '150+', label: 'Quality Videos' },
   { value: '5+', label: 'Million Views' },
-  { value: '15+', label: 'Happy Clients' },
+  { value: '17+', label: 'Happy Clients' },
 ];
 
 export const Hero: React.FC = () => {
