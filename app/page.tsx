@@ -42,7 +42,7 @@ export default function Home() {
           ]}
         />
         <VideoShowcase
-          heading="Video Showcase"
+          heading="Short-form Videos"
           description=""
           initialIndex={5}
           videos={[
