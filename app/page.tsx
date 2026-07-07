@@ -43,8 +43,16 @@ export default function Home() {
         />
         <VideoShowcase
           heading="Video Showcase"
-          description="Eye-catching motion design that brings brands to life. From kinetic typography to full animated sequences — crafted to stop the scroll."
-          videos={['/Graphic_01.mp4', '/Graphic_02.mp4', '/Graphic_03.mp4']}
+          description=""
+          initialIndex={5}
+          videos={[
+            'https://res.cloudinary.com/ui17kpco/video/upload/Act_Like_the_Runner_V3_flttnw.mp4',
+            'https://res.cloudinary.com/ui17kpco/video/upload/Don_t_Switch_Your_Number_-_Hook_1_9x16_qcijcv.mp4',
+            'https://res.cloudinary.com/ui17kpco/video/upload/Hard_Comedy_-_Hook_1_9x16_V3_zi7ddf.mp4',
+            'https://res.cloudinary.com/ui17kpco/video/upload/Video_Retention_Test_-_Hook_1_9x16_cjqeuf.mp4',
+            'https://res.cloudinary.com/ui17kpco/video/upload/One_piece_ep1_x9troz.mp4',
+            'https://res.cloudinary.com/ui17kpco/video/upload/9x16_Free_Scan_Callout_gobu1x.mp4',
+          ]}
         />
         <div className='pt-20 sm:pt-24 lg:pt-32'>
           <CTA />
